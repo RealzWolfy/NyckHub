@@ -11,7 +11,8 @@
   "keywords": [],
   "author": "zWolfy",
   "devDependencies": {
-    "electron-builder": "^22.9.1"
+    "electron-builder": "^22.9.1",
+    "electron": "11.2.1"
   },
   "build": {
     "appId": "tech.zwolfy.nyckhub",
@@ -32,7 +33,6 @@
   },
   "dependencies": {
     "discord-rich-presence": "0.0.8",
-    "electron": "^11.2.1",
     "fs": "0.0.1-security",
     "youtube-info": "^1.3.2"
   }

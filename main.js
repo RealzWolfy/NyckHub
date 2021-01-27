@@ -5,7 +5,7 @@ const fyt = require('youtube-info');
 
 const config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`));
 
-fs.writeFileSync('node_modules/youtube-info/index.js', fs.readFileSync(`${__dirname}/hotfixyti.js`));
+fs.writeFileSync(`${__dirname}/node_modules/youtube-info/index.js`, fs.readFileSync(`${__dirname}/hotfixyti.js`));
 
 
 function createWindow () {
