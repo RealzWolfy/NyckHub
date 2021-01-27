@@ -1,0 +1,144 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #434C5E;
+}
+
+.protect {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.header,
+.content {
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    background-color: #3B4252;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    color: rgb(255, 255, 255);
+}
+
+.odysee {
+    vertical-align: middle;
+}
+
+.oimg {
+    border-radius: 20%;
+}
+
+.yt {
+    vertical-align: middle;
+}
+
+.twitch {
+    vertical-align: middle;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center; 
+    align-items: center; 
+    height: 175px;
+}
+  
+.flex-item-1 {
+    background-color: #2e3440ad;
+    padding: 40px;
+    margin: 10px;
+    width: 275px;
+    height: 325px;
+    border-radius: 3%;
+}
+
+.flex-item-2 {
+    background-color: #2e3440ad;
+    padding: 40px;
+    margin: 10px;
+    width: 275px;
+    height: 325px;
+    border-radius: 3%;
+}
+
+.flex-item-3 {
+    background-color: #2e3440ad;
+    padding: 40px;
+    margin: 10px;
+    width: 275px;
+    height: 325px;
+    border-radius: 3%;
+}
+
+.extra {
+    height: 20px;
+    font-size: 17px;
+}
+
+.odyseebtn {
+    background-color: #F4564C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 3%;
+}
+
+.ytbtn {
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 3%;
+}
+
+.twitchbtn {
+    background-color: #6441A4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 3%;
+}
+
+@media (max-width: 1150px) {
+    .flex-item-1, .flex-item-2, .flex-item-3 {
+      flex: 0%;
+      margin: 5px;
+    }
+  }
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: normal;
+    font-weight: 300;
+    margin: 0;
+    opacity: 0.5;
+}
