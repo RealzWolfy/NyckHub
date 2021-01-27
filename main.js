@@ -2,10 +2,11 @@ const {app, ipcMain, BrowserWindow, Menu} = require('electron');
 const fs = require('fs');
 const rpc = require('discord-rich-presence')('803887326828036096');
 const fyt = require('youtube-info');
+const path = require('path');
 
-const config = JSON.parse(fs.readFileSync(`${__dirname}/config.json`));
+const config = JSON.parse(fs.readFileSync(path.join(app.getAppPath(), 'config.json')));
 
-fs.writeFileSync(`${__dirname}/node_modules/youtube-info/index.js`, fs.readFileSync(`${__dirname}/hotfixyti.js`));
+fs.writeFileSync(path.join(app.getAppPath(), 'node_modules/youtube-info/index.js'), fs.readFileSync(path.join(app.getAppPath(), 'hotfixyti.js')));
 
 
 function createWindow () {
@@ -18,7 +19,7 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      preload: __dirname + '/preload.js',
+      preload: path.join(app.getAppPath(), 'preload.js'),
       plugins: true
     }
   });
@@ -130,7 +131,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
@@ -143,7 +144,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
@@ -164,7 +165,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
@@ -177,7 +178,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
@@ -198,7 +199,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
@@ -211,7 +212,7 @@ function createWindow () {
 
               js0n = JSON.stringify(js0n, null, 4);
 
-              fs.writeFileSync(`${__dirname}/config.json`, js0n);
+              fs.writeFileSync(path.join(app.getAppPath(), 'config.json'), js0n);
 
               mainWindow.close();
               app.relaunch();
