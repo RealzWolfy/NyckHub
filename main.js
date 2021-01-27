@@ -6,8 +6,7 @@ const path = require('path');
 
 const config = JSON.parse(fs.readFileSync(path.join(app.getAppPath(), 'config.json')));
 
-fs.writeFileSync(path.join(app.getAppPath(), 'node_modules/youtube-info/index.js'), fs.readFileSync(path.join(app.getAppPath(), 'hotfixyti.js')));
-
+fs.writeFileSync(path.join(app.getAppPath(), 'node_modules/youtube-info/index.js')), fs.readFileSync(path.join(app.getAppPath(), 'hotfixyti.js'));
 
 function createWindow () {
   const mainWindow = new BrowserWindow({
@@ -19,8 +18,7 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      preload: path.join(app.getAppPath(), 'preload.js'),
-      plugins: true
+      preload: path.join(app.getAppPath(), 'preload.js')
     }
   });
 
